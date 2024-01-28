@@ -1,0 +1,19 @@
+type Mutation { 
+	addStudent(input: StudentInput): Student
+}
+
+type Query {
+	welcome: String
+}
+
+type Student {
+	id: String
+	name: String
+	marks: Float
+}
+
+input StudentInput {
+	id: String
+	name: String
+	marks: Float
+}
